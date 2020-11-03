@@ -22,3 +22,4 @@ node {
    sh label: '', script: 'mvn install'
   }
  }
+}
