@@ -21,5 +21,14 @@ node {
 	  stage('Maven-Install') {
    sh label: '', script: 'mvn install'
   }
+	 
+	 
+    stage('Docker-Stage-Deployment') {
+   
+	  
+    sh 'docker build -t college_branchimg:$BUILD_NUMBER . '
+   sh ' docker run -d -p 8081:8080  --name college_branchcontainer$BUILD_NUMBER college_branchimg:$BUILD_NUMBER '
+    
+  }
  }
 }
