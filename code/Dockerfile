@@ -14,5 +14,5 @@ RUN cp -Rv /tmp/apache-tomcat-9.0.40/* /usr/local/tomcat/
 RUN cd 
 RUN rm -rf /usr/local/tomcat/webapps/*
 EXPOSE 8080
-RUN cp /home/ubuntu/college-branch-modelviewcontroller/code/target/*.war   /usr/local/tomcat/webapps/ROOT.war
+RUN cp /tmp/docker/college-branch-modelviewcontroller/code/target/*.war   /usr/local/tomcat/webapps/ROOT.war
 CMD /usr/local/tomcat/bin/catalina.sh run
