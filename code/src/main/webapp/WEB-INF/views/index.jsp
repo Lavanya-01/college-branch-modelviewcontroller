@@ -3,13 +3,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Insert title here</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <title>Home Page</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+* {box-sizing: border-box}
+body {
+font-family: Verdana, sans-serif; 
+margin:0;
+background-color: #ffc7ea;
+background-image: url(../img/b1.jpg);
+}
+.container{
+  width:70%;
+  max-height: 400px !important;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 600px !important;
+}
+</style>
+    
+    
+    
 </head>
 <body>
 
