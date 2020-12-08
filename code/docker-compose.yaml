@@ -7,8 +7,14 @@ services:
          MYSQL_ROOT_PASSWORD: root
         ports:
          - '3306:3306'
+        volumes:
+         - server_db:/var/lib/mysql
+
+ 
 
   collegeproject:
     build: .
     ports:
       - '30084:8080'
+volumes: 
+  server_db:      
