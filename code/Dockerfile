@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 WORKDIR /tmp/docker
-RUN apt-get -y update && apt-get -y upgrade && apt-get -y install git
-RUN apt-get -y install openjdk-8-jdk
+RUN apt-get -y update
+RUN apt-get -y install default-jdk
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
-RUN apt-get -y update && apt-get -y install maven
+RUN  apt-get -y install software-properties-common && apt-add-repository universe && apt-get -y update && apt-get -y install maven
 RUN git clone https://github.com/Lavanya-01/college-branch-modelviewcontroller.git
 RUN cd college-branch-modelviewcontroller/code  && mvn clean install -Dmaven.test.skip=true
 RUN cd
