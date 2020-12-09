@@ -16,7 +16,7 @@
 </head>
 <body>
 
- 
+ <center>
 
 
 <div class="container-fluid">
@@ -37,6 +37,7 @@
   </ul>
 </nav>
 <br>
+    </center>
 </body>
 </html>
 
