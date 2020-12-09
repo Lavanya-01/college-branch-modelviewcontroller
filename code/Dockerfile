@@ -8,9 +8,9 @@ RUN git clone https://github.com/Lavanya-01/college-branch-modelviewcontroller.g
 RUN cd college-branch-modelviewcontroller/code  && mvn clean install -Dmaven.test.skip=true
 RUN cd
 RUN mkdir /usr/local/tomcat
-ADD http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.40/bin/apache-tomcat-9.0.40.tar.gz  /tmp/tomcat.tar.gz
+ADD http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.41/bin/apache-tomcat-9.0.41.tar.gz  /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
-RUN cp -Rv /tmp/apache-tomcat-9.0.40/* /usr/local/tomcat/
+RUN cp -Rv /tmp/apache-tomcat-9.0.41/* /usr/local/tomcat/
 RUN cd 
 RUN rm -rf /usr/local/tomcat/webapps/*
 EXPOSE 8080
