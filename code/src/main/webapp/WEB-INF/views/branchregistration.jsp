@@ -41,6 +41,7 @@ background-image: url(../img/b1.jpg);
     
 </head>
 <body>
+    
 <div class="form1" align="center">
 <form action="insertbranch" method="post" id="form1">
 <table>
@@ -56,8 +57,9 @@ background-image: url(../img/b1.jpg);
 </table>
 <hr>
 <br>
-
- 
+<br>   
+<br>
+<br>
 
 <table>
 <tr>
@@ -75,10 +77,13 @@ background-image: url(../img/b1.jpg);
 <tr>
 <td><input type="submit" value="Submit"></td>
 </tr>
+    
+    <br>
+    <br>
 </table>
 </form>
 
- 
+ <br>
 
 </div>
 <p align="center">
